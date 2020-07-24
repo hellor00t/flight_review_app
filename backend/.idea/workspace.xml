@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2df1c60-0a1b-4231-8036-18d7e89d4241" name="Default Changelist" comment="" />
+    <list default="true" id="d2df1c60-0a1b-4231-8036-18d7e89d4241" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../flight_review_backend/src/main/java/com/galvanize/flight_review_backend/Review.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flight_review_backend/src/main/java/com/galvanize/flight_review_backend/ReviewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flight_review_backend/src/main/java/com/galvanize/flight_review_backend/ReviewRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
