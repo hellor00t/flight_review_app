@@ -1,0 +1,29 @@
+version: '3.3'
+
+services: 
+  database:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    volumes:
+        - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  backend:
+    build: ./backend
+    ports:
+        - 8080:8080
+    depends_on:
+        - 'database'
+
+  frontend:
+    build: ./frontend
+    environment: 
+      HOST: 0.0.0.0
+      PORT: 3000
+      CI: 'true'
+    ports: 
+        - 3000:3000
+    depends_on:
+        - 'backend'
