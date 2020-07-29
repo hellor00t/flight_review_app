@@ -17,6 +17,10 @@ public class Review {
     private Long id;
     private String flight;
     private String user;
+    private int flightRating;
+    private int reviewRating;
+    private String photo_src;
+    private String comment;
 
     public Long getId() {
         return id;
@@ -26,6 +30,7 @@ public class Review {
         this.id = id;
     }
 
+    @Query
     public String getFlight() {
         return flight;
     }
@@ -34,6 +39,7 @@ public class Review {
         this.flight = flight;
     }
 
+    @Query
     public String getUser() {
         return user;
     }
@@ -74,8 +80,4 @@ public class Review {
         this.comment = comment;
     }
 
-    private int flightRating;
-    private int reviewRating;
-    private String photo_src;
-    private String comment;
 }
